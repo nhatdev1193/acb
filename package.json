@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "BACK END FOR ACB PROJECT",
   "main": "index.js",
+  "engines": {
+    "node": "8.9.1"
+  },
   "scripts": {
     "start": "NODE_ENV=production node ./bin/index.js",
     "dev": "NODE_ENV=development ./node_modules/.bin/nodemon ./bin/index.js",
