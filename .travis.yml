@@ -2,5 +2,11 @@
 language: node_js
 node_js:
   - "8.9.1"
+env:
+  - PORT=3000
+  - HOST=localhost
+  - DB_HOST=localhost
+  - DB_PORT=27017
+  - DB_TEST_NAME=acb_testing
 services:
   - mongodb
