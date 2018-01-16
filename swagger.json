@@ -9,7 +9,7 @@
       "url": "https://opensource.org/licenses/MIT"
     }
   },
-  "host": "https://acb-lifestyle-staging.herokuapp.com",
+  "host": "acb-lifestyle-staging.herokuapp.com",
   "basePath": "/api/v1",
   "tags": [
     {
