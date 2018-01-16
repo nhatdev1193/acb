@@ -1,0 +1,47 @@
+{
+  "name": "acb",
+  "version": "0.0.1",
+  "description": "BACK END FOR ACB PROJECT",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node ./bin/index.js",
+    "dev": "NODE_ENV=development ./node_modules/.bin/nodemon ./bin/index.js",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha ./spec/index.spec.js || exit 1",
+    "seed": "node ./bin/seed",
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.6.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "chalk": "^2.3.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "figures": "^2.0.0",
+    "firebase-admin": "^5.6.0",
+    "jsonwebtoken": "^8.1.0",
+    "log-symbols": "^2.1.0",
+    "mongoose": "^5.0.0-rc1",
+    "mongoose-autopopulate": "^0.6.0",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "^1.9.0",
+    "socket.io": "^2.0.4",
+    "swagger-ui-express": "^2.0.14"
+  },
+  "devDependencies": {
+    "axios": "^0.17.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.14.0",
+    "eslint-config-google": "^0.9.1",
+    "lodash": "^4.17.4",
+    "mocha": "^4.1.0",
+    "nodemon": "^1.14.7",
+    "pre-commit": "^1.2.2",
+    "supertest": "^3.0.0"
+  }
+}
